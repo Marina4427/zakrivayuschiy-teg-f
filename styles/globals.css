@@ -8,8 +8,22 @@
   box-sizing: border-box;
 }
 
+:root {
+--active-icon-color: #ff0000;
+}
+
 body {
   margin: 0;
+  font-family: var(--main-font), Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  background-attachment: fixed;
+}
+
+@supports (font-variation-settings: normal) {
+  body {
+      font-family: 'Inter-Variable', sans-serif;
+  }
 }
 
 h1,
@@ -50,4 +64,8 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
+}
+
+button:focus {
+  outline: none;
 }

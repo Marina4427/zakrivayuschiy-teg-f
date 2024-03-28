@@ -4,3 +4,88 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #000;
+    --main-color: #00cc14;
+    --accent-color: #00cc14;
+    --main-font: "Inter-Variable";
+    --accent-font: "PressStart2P";
+    --button-bg-color: #000;
+    --bg-image: repeating-linear-gradient(
+        to right,
+        #000 0,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        #000 0,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      linear-gradient(to bottom, #007f0c 0.01%, #004306);
+    --main-icon-color: #00cc14;
+    --accent-icon-color: #000;
+    --wght: 465;
+    --accent-wght: 785;
+  }
+}
+
+:root.theme-light {
+  --bg-color: #fff;
+  --main-color: #000;
+  --main-font: "Inter-Variable";
+  --accent-font: PressStart2P;
+  --button-bg-color: #fff;
+  --bg-image: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+  --main-icon-color: #000;
+  --accent-icon-color: #ff0000;
+  --wght: 400;
+  --accent-wght: 700;
+}
+
+:root.theme-dark {
+  --bg-color: #000;
+  --main-color: #00cc14;
+  --accent-color: #00cc14;
+  --main-font: "Inter-Variable";
+  --accent-font: "PressStart2P";
+  --button-bg-color: #000;
+  --bg-image: repeating-linear-gradient(
+      to right,
+      #000 0,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #000 0,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #007f0c 0.01%, #004306);
+  --main-icon-color: #00cc14;
+  --accent-icon-color: #000;
+  --wght: 465;
+  --accent-wght: 785;
+}
+
