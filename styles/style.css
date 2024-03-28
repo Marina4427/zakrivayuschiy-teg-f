@@ -192,7 +192,7 @@ Jon Kennedy - Tonto Rides the Gain
 }
 
 .filter-blur {
-  filter: brightness(1.5) contrast(1.2) blur(1px);
+  filter: blur(1px);
 }
 
 .filter-mix {
@@ -426,10 +426,6 @@ dialog::backdrop {
   .theme-menu {
     padding-bottom: 0;
     padding-top: 0.5%;
-  }
-
-  .card-header {
-    padding-block: 1.4%;
   }
 
   .card-header {
