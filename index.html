@@ -13,7 +13,7 @@
     <script src="./scripts/set-theme.js"></script>
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
-    <meta name="color-scheme" content="dark light"/>
+    <meta name="color-scheme" content="dark light" />
   </head>
   <body class="page">
     <header class="header">
@@ -115,7 +115,8 @@
       <article class="card">
         <h2 class="card-header">1 спринт: Я — чистый лист</h2>
         <div class="card-image-container">
-          <span class="card-image-label" aria-hidden="true" >&lt;/HTML&gt;
+          <span class="card-image-label" aria-hidden="true"
+            >&lt;/HTML&gt;
           </span>
           <picture class="filter-grayscale">
             <source srcset="./images/hard-xs.jpg" media="(max-width: 550px)" />
@@ -247,7 +248,9 @@
       <article class="card">
         <h2 class="card-header">2 спринт: Погоня за идеалом</h2>
         <div class="card-image-container">
-          <span class="card-image-label" aria-hidden="true">&lt;desigions&gt;</span>
+          <span class="card-image-label" aria-hidden="true"
+            >&lt;desigions&gt;</span
+          >
           <picture class="filter-hue-rotate">
             <source srcset="./images/mess-xs.jpg" media="(max-width: 550px)" />
             <img
@@ -386,7 +389,9 @@
       <article class="card">
         <h2 class="card-header">3 спринт: Обходные стратегии</h2>
         <div class="card-image-container">
-          <span class="card-image-label" aria-hidden="true">&lt;support&gt;</span>
+          <span class="card-image-label" aria-hidden="true"
+            >&lt;support&gt;</span
+          >
           <picture class="filter-sepia">
             <source srcset="./images/cat-xs.jpg" media="(max-width: 550px)" />
             <img
@@ -450,7 +455,9 @@
       <article class="card">
         <h2 class="card-header">3 спринт: Когда опускаются руки</h2>
         <div class="card-image-container">
-          <span class="card-image-label" aria-hidden="true">&lt;lifes-style: none;&gt;</span>
+          <span class="card-image-label" aria-hidden="true"
+            >&lt;lifes-style: none;&gt;</span
+          >
           <picture class="filter-blur">
             <source
               srcset="./images/shelves-xs.jpg"
@@ -520,7 +527,9 @@
       <article class="card">
         <h2 class="card-header">«Сейчас я здесь»</h2>
         <div class="card-image-container">
-          <span class="card-image-label" aria-hidden="true">&lt;experience&gt;</span>
+          <span class="card-image-label" aria-hidden="true"
+            >&lt;experience&gt;</span
+          >
           <picture class="filter-mix">
             <source srcset="./images/ahead-xs.jpg" media="(max-width: 550px)" />
             <img
@@ -587,40 +596,40 @@
     <footer>
       <button
         class="button button_save"
-        onclick="window['dialog-id'].showModal()"
+        onclick="window['dialog-id'].showModal();"
         aria-controls="dialog-id"
       >
-        <svg
-          class="floppy"
-          viewbox="0 0 39 39">
-            <use href="./svg/floppy.svg#save-icon"></use>
+        <svg class="floppy" viewbox="0 0 39 39">
+          <use href="./svg/floppy.svg#save-icon"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
     </footer>
+
     <dialog id="dialog-id" class="dialog-design">
-      <div class="dialog-container">
-        <svg
-          class="floppy"
-          viewbox="0 0 39 39"
-          xmlns="http://www.w3.org/2000/svg"
-          >
-          <use href="./svg/floppy.svg#save-icon"></use>
-        </svg>
-        <p class="button text-dialog">
-          Вставьте дискету,&nbsp;чтобы продолжить
-        </p>
-      </div>
       <form>
+        <div class="dialog-container">
+          <svg
+            class="floppy"
+            viewbox="0 0 39 39"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <use href="./svg/floppy.svg#save-icon"></use>
+          </svg>
+          <p class="button text-dialog">
+            Вставьте дискету,&nbsp;чтобы продолжить
+          </p>
+        </div>
         <button
           class="button button-ok"
-          onclick="window['dialog-id'].close()"
           type="submit"
+          onclick="window['dialog-id'].close();"
         >
           <span class="text">ок</span>
         </button>
       </form>
     </dialog>
+
     <script src="./scripts/like.js"></script>
   </body>
 </html>
