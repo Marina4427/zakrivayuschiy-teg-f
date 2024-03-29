@@ -20,7 +20,7 @@ body {
   background-attachment: fixed;
 }
 
-@supports (font-variation-settings: normal) {
+@supports (font-variation-settings: "wght" var(--text-font-weight)) {
   body {
       font-family: 'Inter-Variable', sans-serif;
   }

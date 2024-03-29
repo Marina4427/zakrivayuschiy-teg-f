@@ -29,8 +29,8 @@
       linear-gradient(to bottom, #007f0c 0.01%, #004306);
     --main-icon-color: #00cc14;
     --accent-icon-color: #000;
-    --title-font-weight: "wght" 785;
-    --text-font-weight: "wght" 465;
+    --title-font-weight: 785;
+    --text-font-weight: 465;
   }
 }
 
@@ -58,8 +58,8 @@
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   --main-icon-color: #000;
   --accent-icon-color: #ff0000;
-  --title-font-weight: "wght" 700;
-  --text-font-weight: "wght" 400;
+  --title-font-weight: 700;
+  --text-font-weight: 400;
 }
 
 :root.theme-dark {
@@ -86,6 +86,6 @@
     linear-gradient(to bottom, #007f0c 0.01%, #004306);
   --main-icon-color: #00cc14;
   --accent-icon-color: #000;
-  --title-font-weight: "wght" 700;
-  --text-font-weight: "wght" 400;
+  --title-font-weight: 700;
+  --text-font-weight: 400;
 }

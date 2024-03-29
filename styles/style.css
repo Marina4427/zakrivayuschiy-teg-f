@@ -29,7 +29,7 @@ Jon Kennedy - Tonto Rides the Gain
   grid-template-rows: 1fr 0.3fr 0.5fr;
   grid-template-columns: 1fr;
   font-family: var(--accent-font);
-  font-variation-settings: var(--title-font-weight);
+  font-variation-settings: "wght" var(--title-font-weight);
   height: clamp(280px, calc(100vh - 340px), 450px); /* высота ограничена мин 315px, чтобы при уменьшении VH содержиое .header оставалось в блоке */
   margin: 100px auto;
   background-color: var(--bg-color);
@@ -76,7 +76,7 @@ Jon Kennedy - Tonto Rides the Gain
 
 .card-header {
   font-family: var(--main-font);
-  font-weight: var(--accent-wght);
+  font-weight: var(--title-font-weight);
   padding-inline: var(--offset);
   border-bottom: 2px solid var(--main-color);
   font-size: inherit;
@@ -98,7 +98,7 @@ Jon Kennedy - Tonto Rides the Gain
   font-size: inherit;
   font-family: inherit;
   line-height: 1.3rem;
-  font-weight: var(--font-wght);
+  font-weight: var(--text-font-weight);
 }
 
 .card-text-paragraf + .card-text-paragraf {
@@ -208,7 +208,6 @@ Jon Kennedy - Tonto Rides the Gain
 .card-image-label {
   font-size: 14px;
   font-family: var(--accent-font);
-  font-variation-settings: var(--text-font-weight);
   color: var(--main-color);
   opacity: 0.5;
   z-index: 1;
@@ -273,7 +272,6 @@ Jon Kennedy - Tonto Rides the Gain
 
 .button {
   font-family: var(--accent-font);
-  font-variation-settings: var(--text-font-weight);
   font-size: 14px;
   border-color: var(--main-color);
 }

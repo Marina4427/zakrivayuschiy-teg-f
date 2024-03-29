@@ -24,6 +24,6 @@
   --offset: 10px;
   --main-icon-color: #000;
   --accent-icon-color: #ff0000;
-  --title-font-weight: "wght" 700;
-  --text-font-weight: "wght" 400;
+  --title-font-weight: 700;
+  --text-font-weight: 400;
 }
