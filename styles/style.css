@@ -30,10 +30,7 @@ Jon Kennedy - Tonto Rides the Gain
   grid-template-columns: 1fr;
   font-family: var(--accent-font);
   font-variation-settings: "wgth" var(--wgth);
-  height: max(
-    calc(100vh - 340px),
-    315px
-  ); /* высота ограничена мин 315px, чтобы при уменьшении VH содержиое .header оставалось в блоке */
+  height: clamp(280px, calc(100vh - 340px), 450px); /* высота ограничена мин 315px, чтобы при уменьшении VH содержиое .header оставалось в блоке */
   margin: 100px auto;
   background-color: var(--bg-color);
   justify-items: center;
@@ -169,6 +166,10 @@ Jon Kennedy - Tonto Rides the Gain
 
 .card:not(:first-of-type) {
   margin-top: 50px;
+}
+
+.filter-bright {
+  filter: brightness(135%);
 }
 
 .filter-grayscale {
@@ -365,16 +366,17 @@ dialog::backdrop {
   background-color: rgb(0 0 0 / 0.75);
 }
 
-.floppy {
-  width: 28px;
-  height: 28px;
+.button_save .floppy {
+  width: 21px;
+  height: 21px;
   position: relative;
+  mix-blend-mode: difference;
+  color: var(--accent-color);
 }
 
-.dialog-container .floppy {
+.dialog-container {
   width: 39px;
   height: 39px;
-  flex-shrink: 0;
 }
 
 .text-dialog {
@@ -382,11 +384,10 @@ dialog::backdrop {
   line-height: 1.5;
 }
 
-.fill-icon {
-  fill: var(--accent-color);
-  mix-blend-mode: difference;
-  z-index: 1;
-  position: absolute;
+.dialog-container .floppy {
+  width: 39px;
+  height: 39px;
+  flex-shrink: 0;
 }
 
 .special-offset {
@@ -397,7 +398,7 @@ dialog::backdrop {
   .header {
     max-width: 700px;
     margin-inline: auto;
-    height: max(250px, calc(100vh - 592px));
+    height: clamp(400px, calc(100vh - 592px), 700px);
   }
 
   .theme-menu {

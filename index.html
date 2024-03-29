@@ -52,7 +52,7 @@
         </h2>
         <div class="card-image-container">
           <span class="card-image-label" aria-hidden="true">&lt;/HTML&gt;</span>
-          <picture>
+          <picture class="filter-bright">
             <source srcset="./images/begin-xs.jpg" media="(max-width: 550px)" />
             <img
               class="card-image"
@@ -117,7 +117,7 @@
         <div class="card-image-container">
           <span class="card-image-label" aria-hidden="true" >&lt;/HTML&gt;
           </span>
-          <picture>
+          <picture class="filter-grayscale">
             <source srcset="./images/hard-xs.jpg" media="(max-width: 550px)" />
             <img
               class="card-image"
@@ -184,7 +184,7 @@
         <h2 class="card-header">1 спринт: А если не получится?</h2>
         <div class="card-image-container">
           <span class="card-image-label" aria-hidden="true">&lt;CSS&gt;</span>
-          <picture>
+          <picture class="filter-saturate">
             <source srcset="./images/dog-xs.jpg" media="(max-width: 550px)" />
             <img
               class="card-image"
@@ -248,7 +248,7 @@
         <h2 class="card-header">2 спринт: Погоня за идеалом</h2>
         <div class="card-image-container">
           <span class="card-image-label" aria-hidden="true">&lt;desigions&gt;</span>
-          <picture>
+          <picture class="filter-hue-rotate">
             <source srcset="./images/mess-xs.jpg" media="(max-width: 550px)" />
             <img
               class="card-image"
@@ -314,7 +314,7 @@
         <h2 class="card-header">2 спринт: О тех, кто рядом</h2>
         <div class="card-image-container">
           <span class="card-image-label" aria-hidden="true">care</span>
-          <picture>
+          <picture class="filter-invert">
             <source
               srcset="./images/hiking-xs.jpg"
               media="(max-width: 550px)"
@@ -387,7 +387,7 @@
         <h2 class="card-header">3 спринт: Обходные стратегии</h2>
         <div class="card-image-container">
           <span class="card-image-label" aria-hidden="true">&lt;support&gt;</span>
-          <picture>
+          <picture class="filter-sepia">
             <source srcset="./images/cat-xs.jpg" media="(max-width: 550px)" />
             <img
               class="card-image"
@@ -451,7 +451,7 @@
         <h2 class="card-header">3 спринт: Когда опускаются руки</h2>
         <div class="card-image-container">
           <span class="card-image-label" aria-hidden="true">&lt;lifes-style: none;&gt;</span>
-          <picture>
+          <picture class="filter-blur">
             <source
               srcset="./images/shelves-xs.jpg"
               media="(max-width: 550px)"
@@ -521,7 +521,7 @@
         <h2 class="card-header">«Сейчас я здесь»</h2>
         <div class="card-image-container">
           <span class="card-image-label" aria-hidden="true">&lt;experience&gt;</span>
-          <picture>
+          <picture class="filter-mix">
             <source srcset="./images/ahead-xs.jpg" media="(max-width: 550px)" />
             <img
               class="card-image"
@@ -590,16 +590,22 @@
         onclick="window['dialog-id'].showModal()"
         aria-controls="dialog-id"
       >
-        <svg class="floppy" viewbox="0 0 28 28">
-          <use href="svg/floppy.svg#floppy"></use>
+        <svg
+          class="floppy"
+          viewbox="0 0 39 39">
+            <use href="./svg/floppy.svg#save-icon"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
     </footer>
     <dialog id="dialog-id" class="dialog-design">
       <div class="dialog-container">
-        <svg class="floppy" viewbox="0 0 30 30">
-          <use href="svg/floppy.svg#floppy"></use>
+        <svg
+          class="floppy"
+          viewbox="0 0 39 39"
+          xmlns="http://www.w3.org/2000/svg"
+          >
+          <use href="./svg/floppy.svg#save-icon"></use>
         </svg>
         <p class="button text-dialog">
           Вставьте дискету,&nbsp;чтобы продолжить
