@@ -26,7 +26,7 @@ Jon Kennedy - Tonto Rides the Gain
 }
 
 .header {
- : var(--accent-font), Blippo, fantasy;
+  font-family: var(--accent-font), Blippo, fantasy;
   margin: 100px auto;
   background-color: var(--bg-color);
   justify-items: center;
