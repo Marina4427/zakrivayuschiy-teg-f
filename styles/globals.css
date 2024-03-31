@@ -20,12 +20,6 @@ body {
   background-attachment: fixed;
 }
 
-@supports (font-variation-settings: "wght" var(--text-font-weight)) {
-  body {
-      font-family: 'Inter-Variable', sans-serif;
-  }
-}
-
 h1,
 h2,
 h3,
@@ -42,6 +36,7 @@ li {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 button,

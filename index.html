@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<ht lang="ru">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,12 +13,16 @@
     <script src="./scripts/set-theme.js"></script>
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="./images/favicon.png">
     <meta name="color-scheme" content="dark light" />
   </head>
   <body class="page">
     <header class="header">
-      <h1 class="header-title">&lt;/html&gt;</h1>
-      <h2 class="header-subtitle">закрываюший тег</h2>
+      <a
+        class="header-title">
+        &lt;/html&gt;
+      </a>
+      <h1 class="header-subtitle">закрываюший тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -37,7 +41,7 @@
               Авто
             </button>
           </li>
-          <li class="theme-menu__item">
+          <li class="theme-menu__item ">
             <button type="button" data-theme="light" class="theme-menu__button">
               Светло
             </button>
@@ -51,7 +55,7 @@
           Фритрек и нулевой спринт: Подготовка&nbsp;к&nbsp;работе
         </h2>
         <div class="card-image-container">
-          <span class="card-image-label" aria-hidden="true">&lt;/HTML&gt;</span>
+
           <picture >
             <source srcset="./images/begin-xs.jpg" media="(max-width: 550px)" />
             <img
@@ -61,6 +65,9 @@
               src="./images/begin.jpg "
             />
           </picture>
+
+        <span class="card-image-label" aria-hidden="true">&lt;/HTML&gt;</span>
+
         </div>
         <div class="card-text">
           <p class="card-text-paragraf">
@@ -73,7 +80,10 @@
             просто, но вышло не так. В этом разделе я узнала много нового.
           </p>
           <div class="button-container">
-            <button class="button card__icon-button">
+            <button
+              class="card__icon-button"
+              type="button"
+            >
               <svg
                 class="like-icon"
                 width="39"
@@ -86,7 +96,7 @@
                   <path
                     class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
-                    fill="black"
+                    fill="var(--main-icon-color)"
                   />
                   <path
                     class="main-body"
@@ -106,7 +116,10 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button
+              class="button button-style card__like-button"
+              type="button"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -142,7 +155,10 @@
             ?!".
           </p>
           <div class="button-container">
-            <button class="button card__icon-button">
+            <button
+              class="card__icon-button"
+              type="button"
+            >
               <svg
                 class="like-icon"
                 width="39"
@@ -155,7 +171,7 @@
                   <path
                     class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
-                    fill="black"
+                    fill="var(--main-icon-color)"
                   />
                   <path
                     class="main-body"
@@ -175,7 +191,10 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button
+              class="button button-style card__like-button"
+              type="button"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -206,7 +225,10 @@
             включу его в свое портфолио!
           </p>
           <div class="button-container">
-            <button class="button card__icon-button">
+            <button
+              class="card__icon-button"
+              type="button"
+            >
               <svg
                 class="like-icon"
                 width="39"
@@ -219,7 +241,7 @@
                   <path
                     class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
-                    fill="black"
+                    fill="var(--main-icon-color)"
                   />
                   <path
                     class="main-body"
@@ -239,7 +261,10 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button
+              class="button button-style card__like-button"
+              type="button"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -274,7 +299,10 @@
             правда сменился остаточно быстро на "работает и прекрасно".
           </p>
           <div class="button-container">
-            <button class="button card__icon-button">
+            <button
+              class="card__icon-button"
+              type="button"
+            >
               <svg
                 class="like-icon"
                 width="39"
@@ -287,7 +315,7 @@
                   <path
                     class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
-                    fill="black"
+                    fill="var(--main-icon-color)"
                   />
                   <path
                     class="main-body"
@@ -307,7 +335,10 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button
+              class="button button-style card__like-button"
+              type="button"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -347,7 +378,10 @@
             мило.
           </p>
           <div class="button-container">
-            <button class="button card__icon-button">
+            <button
+              class="card__icon-button"
+              type="button"
+              >
               <svg
                 class="like-icon"
                 width="39"
@@ -360,7 +394,7 @@
                   <path
                     class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
-                    fill="black"
+                    fill="var(--main-icon-color)"
                   />
                   <path
                     class="main-body"
@@ -380,7 +414,10 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button
+              class="button button-style card__like-button"
+              type="button"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -413,7 +450,10 @@
             обычно на решение 'такой' задачи требуется 1 или 2 строчки кода.
           </p>
           <div class="button-container">
-            <button class="button card__icon-button">
+            <button
+              class="card__icon-button"
+              type="button"
+            >
               <svg
                 class="like-icon"
                 width="39"
@@ -426,7 +466,7 @@
                   <path
                     class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
-                    fill="black"
+                    fill="var(--main-icon-color)"
                   />
                   <path
                     class="main-body"
@@ -446,7 +486,10 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button
+              class="button button-style card__like-button"
+              type="button"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -485,7 +528,10 @@
             внимание только на одну задачу.
           </p>
           <div class="button-container">
-            <button class="button card__icon-button">
+            <button
+              class="card__icon-button"
+              type="button"
+            >
               <svg
                 class="like-icon"
                 width="39"
@@ -498,7 +544,7 @@
                   <path
                     class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
-                    fill="black"
+                    fill="var(--main-icon-color)"
                   />
                   <path
                     class="main-body"
@@ -518,7 +564,10 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button
+              class="button button-style card__like-button"
+              type="button"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -553,7 +602,10 @@
             Я осознаю, как много и как мало я знаю и умею одновременно!
           </p>
           <div class="button-container">
-            <button class="button card__icon-button">
+            <button
+              class="card__icon-button"
+              type="button"
+            >
               <svg
                 class="like-icon"
                 width="39"
@@ -566,7 +618,7 @@
                   <path
                     class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
-                    fill="black"
+                    fill="var(--main-icon-color)"
                   />
                   <path
                     class="main-body"
@@ -586,27 +638,32 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button
+              class="button button-style card__like-button"
+              type="button"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
       </article>
-    </main>
-    <footer>
       <button
-        class="button button_save"
+        class="button button-style button_save"
+        type="button"
         onclick="window['dialog-id'].showModal();"
         aria-controls="dialog-id"
       >
         <svg class="floppy" viewbox="0 0 39 39">
           <use href="./svg/floppy.svg#save-icon"></use>
         </svg>
-        <span class="button__text">Сохранить на память</span>
+        <span class="button__text">Сохранить на&nbsp;память</span>
       </button>
-    </footer>
+    </main>
 
-    <dialog id="dialog-id" class="dialog-design">
+    <dialog
+      id="dialog-id"
+      class="dialog-design"
+    >
       <form method="dialog">
         <div class="dialog-container">
           <svg
@@ -616,20 +673,21 @@
           >
             <use href="./svg/floppy.svg#save-icon"></use>
           </svg>
-          <p class="button text-dialog">
+          <p class="button-style text-dialog">
             Вставьте дискету,&nbsp;чтобы продолжить
           </p>
         </div>
+
         <button
-          class="button button-ok"
+          class="button-style button button-ok"
           type="submit"
           onclick="window['dialog-id'].close();"
         >
-          <span class="text">ок</span>
+          <span class="text button__text">ок</span>
         </button>
+
       </form>
     </dialog>
-
     <script src="./scripts/like.js"></script>
   </body>
-</ht
+</html>

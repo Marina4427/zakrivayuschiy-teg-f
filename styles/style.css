@@ -22,35 +22,35 @@ Jon Kennedy - Tonto Rides the Gain
   background-image: var(--bg-image);
   background-size: cover;
   background-attachment: fixed;
+  font-weight: 400;
 }
 
 .header {
-  display: grid;
-  grid-template-rows: 1fr 0.3fr 0.5fr;
-  grid-template-columns: 1fr;
-  font-family: var(--accent-font);
-  font-variation-settings: "wght" var(--title-font-weight);
-  height: clamp(280px, calc(100vh - 340px), 450px); /* высота ограничена мин 315px, чтобы при уменьшении VH содержиое .header оставалось в блоке */
+ : var(--accent-font), Blippo, fantasy;
   margin: 100px auto;
   background-color: var(--bg-color);
   justify-items: center;
   text-transform: uppercase;
   border: 2px solid var(--main-color);
+  position: relative;
+  text-align: center;
 }
 
 .header-title {
-  font-size: clamp(2.825rem, 2.5357rem + 1.6964vw, 4.0625rem);
-  align-self: end;
-  padding-bottom: 0.8%;
-}
+  display: inline-block;
+  font-size: clamp(2.8125rem, 2.6054rem + 1.7857vw, 4.0625rem);
+  padding-top: 32.5%;
+ }
 
 .header-subtitle {
-  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-  padding-top: 4.5%;
+ font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  padding-top: 5.5%;
 }
 
 .theme-menu {
-  padding-bottom: 6%;
+  padding-block: 5.5%;
+  padding-left: 33%;
+  text-align: start;
 }
 
 .theme-menu__button {
@@ -60,6 +60,7 @@ Jon Kennedy - Tonto Rides the Gain
   line-height: 1;
   position: relative;
   background-color: var(--button-bg-color);
+  transform: opacity 0.3s ease;
 }
 
 .theme-menu__list {
@@ -75,8 +76,7 @@ Jon Kennedy - Tonto Rides the Gain
 }
 
 .card-header {
-  font-family: var(--main-font);
-  font-weight: var(--title-font-weight);
+  font-variation-settings: "wght" var(--title-font-weight);
   padding-inline: var(--offset);
   border-bottom: 2px solid var(--main-color);
   font-size: inherit;
@@ -84,77 +84,40 @@ Jon Kennedy - Tonto Rides the Gain
   line-height: 1.3rem;
 }
 
+.card-image-container {
+  position: relative;
+  max-height: 375px;
+  max-width: 375px;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+
 .card-image {
   object-fit: cover;
   object-position: center;
   width: 100%;
-  display: block; /*убирает отступ*/
+  height: 100%;
 }
 
 .card-text {
   --offset: 25px;
   padding: var(--offset);
   border-top: 2px solid var(--main-color);
-  font-size: inherit;
-  font-family: inherit;
-  line-height: 1.3rem;
-  font-weight: var(--text-font-weight);
-}
-
-.card-text-paragraf + .card-text-paragraf {
-  padding-block: 26px;
-  line-height: 121%;
 }
 
 .card__icon-button {
   border: none;
   background-color: transparent;
-}
-/* Анимация иконки сердце*/
-
-.like-icon .contour {
-  fill: var(--main-icon-color);
+  padding: 0;
+  transition: outline 0.3s ease;
 }
 
-.like-icon .core {
-  fill: var(--bd-color);
-  transition: fill 0.3s 0.05s ease;
-}
-
-.like-icon .main-body {
-  fill: var(--bd-color);
-  transition: fill 0.3s ease;
-}
-
-.like-icon .sparks {
-  opacity: 0;
-  fill: var(--active-icon-color);
-}
-
-.like-icon:hover .core,
-.like-icon:hover .main-body {
-  fill: var(--main-icon-color);
-  cursor: pointer;
-}
-
-.like-icon:active .core,
-.like-icon:active .main-body {
-  fill: var(--active-icon-color);
-}
-
-.like-icon.is-liked .contour {
-  fill: var(--active-icon-color);
-  transition: fill 0.3s ease 0.06s;
-}
-
-.like-icon.is-liked .main-body {
-  fill: var(--active-icon-color);
-  transition: fill 0.3s ease 0.06s;
-}
-
-.like-icon.is-liked .core {
-  fill: var(--active-icon-color);
-  transition: fill 0.3s ease 0.06s;
+.card-text-paragraf {
+  padding-bottom: 26px;
+  font-family: inherit;
+  font-variation-settings: "wght" var(--text-font-weight);
+  font-size: inherit;
+  line-height: 1.3rem;
 }
 
 .container {
@@ -201,33 +164,71 @@ Jon Kennedy - Tonto Rides the Gain
     invert(25%) hue-rotate(82deg);
 }
 
-.card-image-container {
-  position: relative;
+@supports (text-stroke: 1px var(--shadow-color)) or
+  (-webkit-text-stroke: 1px var(--shadow-color)) {
+  .image-label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--shadow-color);
+    text-stroke: 1px var(--shadow-color);
+  }
 }
 
 .card-image-label {
+  font-family: var(--accent-font), Blippo, fantasy;
   font-size: 14px;
-  font-family: var(--accent-font);
-  color: var(--main-color);
-  opacity: 0.5;
+  color: inherit;
   z-index: 1;
+  opacity: 0.5;
+  text-shadow: -1px 0 var(--shadow-color), 0 1px var(--shadow-color),
+    1px 0 var(--shadow-color), 0 -1px var(--shadow-color);
   mix-blend-mode: hard-light;
-  text-shadow: -1px 0 var(--main-color), 0 1px var(--main-color),
-    1px 0 var(--main-color), 0 -1px var(--main-color);
   position: absolute;
-  right: 11px;
-  top: 20px;
+  right: 12px;
+  top: 24px;
 }
 
-@supports (
-  (text-stroke: 1px var(--main-color)) or
-    (-webkit-text-stroke: var(--main-color))
-) {
-  .card-image-label {
-    -webkit-text-stroke: 1px var(--main-color);
-    text-stroke: 1px var(--main-color);
-    text-shadow: none;
-  }
+.button {
+  border: 1px solid var(--main-color);
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.button-style {
+  font-family: var(--accent-font), Blippo, fantasy;
+  font-size: 14px;
+}
+
+.card__like-button {
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  width: 130px;
+  padding-block: 10px;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 6px;
+}
+
+.button_save {
+  background-color: var(--bg-color);
+  position: relative;
+  overflow: hidden;
+  margin: 50px auto 99px;
+  color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 13.5px 19px;
+  gap: 8px;
+}
+
+.button__text {
+  color: var(--accent-color);
+  mix-blend-mode: difference;
 }
 
 .theme-menu__button:disabled::before {
@@ -252,10 +253,10 @@ Jon Kennedy - Tonto Rides the Gain
   transform: scaleX(0);
   background-color: var(--main-color);
   transform-origin: 0 0;
+  transition: transform 0.3s ease;
 }
 
 .theme-menu__button:focus-visible::after {
-  transition: 0.3s ease;
   transform: scaleX(1);
 }
 
@@ -265,51 +266,16 @@ Jon Kennedy - Tonto Rides the Gain
   pointer-events: none;
 }
 
-.card__like-button:focus-visible {
+.theme-menu__button:hover {
+  opacity: 0.6;
+}
+
+.button:focus-visible {
   box-shadow: 2px 2px 0 0 var(--main-color);
   transition: box-shadow 0.3s ease;
 }
 
-.button {
-  font-family: var(--accent-font);
-  font-size: 14px;
-  border-color: var(--main-color);
-}
-
-.card__like-button:hover,
-.theme-menu__button:hover {
-  cursor: pointer;
-}
-
-.card__like-button {
-  background-color: transparent;
-  position: relative;
-  overflow: hidden;
-  width: 130px;
-  padding-block: 10px;
-}
-
-.button-container {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-}
-
-.button_save {
-  background-color: var(--bg-color);
-  position: relative;
-  overflow: hidden;
-  margin: 50px auto 99px;
-  color: var(--main-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16.5px 19px;
-  gap: 7px;
-}
-
-.card__like-button::before,
-.button_save::before {
+.button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -322,21 +288,17 @@ Jon Kennedy - Tonto Rides the Gain
   transition: transform 0.5s ease-in-out;
 }
 
-.card__like-button:hover::before,
-.button_save:hover::before {
+.button:hover::before {
   transform: translateX(0);
-  transition: transform 0.5s ease-in-out;
 }
 
-.button__text {
-  color: var(--accent-color);
-  mix-blend-mode: difference;
+.heart:hover {
+  cursor: pointer;
 }
 
 .card__icon-button:focus-visible {
   outline: 1.5px solid var(--main-color);
-  outline-offset: -1px;
-  transition: outline 0.3s ease;
+  outline-offset: -4px;
 }
 
 .dialog-container {
@@ -349,15 +311,18 @@ Jon Kennedy - Tonto Rides the Gain
   text-transform: uppercase;
   appearance: none;
   margin-top: 30px;
-  padding: 12.5px 44%;
-  background-color: var(---bg-color);
+  padding: 10.5px 45%;
+  background-color: var(--bg-color);
+  position: relative;
+  overflow: hidden;
 }
 
 .dialog-design {
   width: 341px;
-  padding: 45px 30px;
+  padding: 30px 40px;
   color: var(--main-color);
   background-color: var(--bg-color);
+  border: 2px solid var(--main-color);
 }
 
 dialog::backdrop {
@@ -365,8 +330,8 @@ dialog::backdrop {
 }
 
 .button_save .floppy {
-  width: 21px;
-  height: 21px;
+  width: 28px;
+  height: 28px;
   position: relative;
   mix-blend-mode: difference;
   color: var(--accent-color);
@@ -391,7 +356,19 @@ dialog::backdrop {
   .header {
     max-width: 700px;
     margin-inline: auto;
-    height: clamp(400px, calc(100vh - 592px), 700px);
+  }
+
+  .header-title {
+    padding-top: 19.5%;
+  }
+
+  .header-subtitle {
+    padding-top: 3%;
+  }
+
+  .theme-menu {
+    padding-block: 3%;
+    padding-left: 38%;
   }
 
   .card {
@@ -399,27 +376,20 @@ dialog::backdrop {
     margin-inline: auto;
   }
 
+  .card-header {
+    padding-block: 0.8%;
+  }
+
+  .card-image-container {
+    position: relative;
+    max-height: 696px;
+    max-width: 696px;
+  }
+
   .button_save {
     padding-block: 14.5px;
     flex-direction: row;
     margin: 50px auto 105px;
-  }
-
-  .header-title {
-    padding-bottom: 0;
-  }
-
-  .header-subtitle {
-    padding-top: 2.5%;
-  }
-
-  .theme-menu {
-    padding-bottom: 0;
-    padding-top: 0.5%;
-  }
-
-  .card-header {
-    padding-block: 0.8%;
   }
 
   .button_like {
@@ -443,5 +413,10 @@ dialog::backdrop {
 
   .dialog-design {
     width: 357px;
+    padding-block: 30px;
+  }
+
+  .button-ok {
+    padding: 9.5px 45%;
   }
 }
